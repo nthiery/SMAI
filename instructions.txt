@@ -1,0 +1,20 @@
+Package Latex pour les mini-symposia du congres SMAI (par Gabriel Peyré <gabriel.peyre@ceremade.dauphine.fr> ) 
+
+Ce package contient les 8 fichiers suivants :
+* instructions.txt : le present fichier d'instructions.
+* Minisymposium-ABCDEF.tex : le fichier principal que vous devez remplir et completer.
+* SMAI-MS-Descriptions.tex : le fichier Latex qui genere la description de votre mini-symposium (dans ce fichier ne modifier que la commande   \input{Minisymposium-ABCDEF}  en remplacant   ABCDEF  par l'acronyme de votre mini-symposium).
+* SMAI-MS-Resumes.tex : le fichier Latex qui genere le resume de votre mini-symposium (dans ce fichier ne modifier que la commande   \input{Minisymposium-ABCDEF}   en remplacant   ABCDEF  par l'acronyme de votre mini-symposium).
+* minisymposium.sty : le fichier de style (ne rien modifier dans ce fichier).
+* SMAI-MS-Descriptions.pdf : un exemple de Description de mini-symposium en PDF obtenu apres compilation.
+* SMAI-MS-Resumes.pdf : un exemple de resume de de mini-symposium en PDF obtenu apres compilation.
+* ABCDEF-fig1.eps : un exemple de figure .EPS.
+
+Instructions : 
+* Renommer le fichier Minisymposium-ABCDEF.tex en remplacant ABCDEF par l'acronyme de votre mini-symposium.
+* Remplir et completer le fichier ainsi renomme.
+* Compiler les fichiers SMAI-MS-Descriptions.tex  et  SMAI-MS-Resumes.tex  apres avoir remplace dans   \input{Minisymposium-ABCDEF}  le mot ABCDEF par l'acronyme de votre mini-symposium ;
+le resume   SMAI-MS-Resumes.pdf   obtenu apres compilation ne devra pas depasser une page, 
+et la description detaillee   SMAI-MS-Descriptions.pdf  obtenue après compilation ne devra pas depasser 5 pages ;
+merci de nous faire parvenir un document dans lequel le texlog ne presente aucune erreur de compilation.
+

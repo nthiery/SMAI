@@ -1,0 +1,139 @@
+% INSTRUCTIONS :
+% *a* renommer ce fichier   minisymposium-ABCDEF.tex
+%        en rempla\c cant   ABCDEF   par l'acronyme de votre mini-symposium.
+% *b* remplir et compl\`eter le fichier ainsi renomm\'e, suivant les indications ci-dessous.
+% *c* au cours de ce travail, ne supprimer et  ne modifier aucun des macros ! merci.
+% *d* compiler les fichiers SMAI-MS-Descriptions.tex  et  SMAI-MS-Resumes.tex
+%        après avoir remplacé dans   \input{Minisymposium-ABCDEF}
+%        le mot ABCDEF par l'acronyme de votre mini-symposium ;
+%        le résumé   SMAI-MS-Resumes.pdf   obtenu après compilation ne devra pas dépasser une page,
+%        et la description détaillée   SMAI-MS-Descriptions.pdf  obtenue après compilation ne devra pas dépasser 5 pages.
+% *e* merci de nous faire parvenir un document dans lequel le texlog ne présente aucune erreur de compilation.
+
+
+%% REMPLIR ICI L'ACRONYME
+\renewcommand{\acronyme}{ABCDEF}
+
+
+%% REMPLIR ICI LE TITRE
+\titre{Du calcul symbolique à l'apprentissage, à bord du Python-Express}
+
+
+%% INDIQUER ICI SI VOTRE MINI-SYMPOPSIUM EST PORTE PAR UNE ANR, UN GDR, OU UN AUTRE GROUPEMENT
+%% (METTRE EN COMMENTAIRE (\%) SI NON UTILISE)
+\support{Mini-symposium porté par le GdR Calcul}
+
+
+%% REMPLIR ICI LE RESUME DU MINI-SYMPOSIUM
+\Resume{
+
+  L'objectif de ce mini-symposium est de donner un aperçu des
+  fonctionnalités offertes par l'écosystème des logiciels libres
+  autour de Python pour les mathématiques pures et appliquées:
+  modélisation, calcul interactif et haute performance, visualisation,
+  traitement de données, le tout accessible depuis un environnement
+  interactif unifié.
+
+  Ce mini-symposium sera suivi dans la soirée par un tutoriel
+  informel, avec aide à l'installation, etc. Les jours suivants les
+  organisateurs seront à la disposition des participants pour une aide
+  plus personnalisée.
+}
+
+
+%% REMPLIR ICI LA LISTE DES ORGANISATEURS
+\ListeOrganisateurs{
+  \organisateur{Paul}{Zimmermann}{Loria}
+  \organisateur{Nicolas M.}{Thiéry}{Laboratoire de Recherche en Informatique, Université Paris Sud}
+}
+
+%% REMPLIR ICI LA LISTE DES EXPOSES
+\ListeExposes{
+  \expose{Max}{Albert}{Computational Modelling Group, University of Southampton}{De la modélisation à la visualisation avec Jupyter/IPython}
+  \expose{Nicolas M.}{Thiéry}{Laboratoire de Recherche en Informatique, Université Paris Sud}{Algèbre et mathématique discrètes avec Sage}
+  \expose{Loïc}{Gouarin}{Laboratoire de Mathématique d'Orsay, Université Paris Sud}{Python performant avec Cython et Pythran}
+  \expose{Fabien}{Pedegrosa}{INRIA Saclay-Île de France}{Apprentissage statistique avec scikit-learn}
+}
+
+
+%% REMPLIR ICI LES REF BIBLIOGRAPHIQUES DU RESUME (METTRE EN COMMENTAIRE (\%) SI NON UTILISE)
+% \BiblioResume{
+% 	\BiblioItem{ref1}{Auteur}{Titre du livre}{Editeur, ville, ann\'ee}
+% 	\BiblioItem{ref2}{Auteur}{Titre de l'article}{Titre de la revue, volume et fascicule, ann\'ee, pages}
+% }
+
+
+%% REMPLIR ICI LES ADRESSES LONGUES DES ORGANISATEURS (et \'eventuellement des orateurs)
+\ListeAdresses{
+	\Adresse{Paul Zimmermann}{\url{www.loria.fr/~zimmerma/}}{Paul.Zimmermann(at)loria.fr}
+	\Adresse{Max Albert}{\url{http://cmg.soton.ac.uk/people/mha2e09/}}{maximilian.albert(at)gmail.com}
+	\Adresse{Nicolas M. Thiéry}{\url{Nicolas.Thiery.name}}{Nicolas.Thiery(at)u-psud.fr}
+	\Adresse{Loïc Gouarin}{\url{http://www.math.u-psud.fr/~gouarin/}}{Loic.Gouarin(at)math.u-psud.fr}
+	\Adresse{Fabien Pedegrosa}{\url{https://www.mendeley.com/profiles/fabian-pedregosa/}}{f(at)bianp.net}
+}
+
+
+%% REMPLIR ICI LA DESCRIPTION DU MS
+\Description{
+
+	% R\'ediger ici la description d\'etaill\'ee du mini-symposium et des interventions qui le compose.
+	% Vous pouvez structurer votre description en sous-sections comme sugg\'er\'e ci-dessous.
+
+	% \medskip
+
+	% Le format est volontairement tr\`es libre, vous n'\^etes pas oblig\'e d'utiliser une section par pr\'esentation.
+
+	% \medskip
+
+	% Vous pouvez utiliser des r\'ef\'erences bibliographiques, \cite{ref1}, \cite{ref2}, \cite{ref3}, \cite{ref4}.
+
+
+	%% SECTION D'INTRODUCTION %%
+	%\section*{Introduction}
+
+	% Vous pouvez ins\'erer des images (voir figure~\ref{fig:fig1}), en prenant soin de commencer le nom du fichier utilis\'e
+	% (au format EPS) par l'acronyme de votre mini-symposium.
+
+	% \medskip
+
+	% Prenez soin \`a ce que le fichier PDF, une fois compil\'e, soit aussi l\'eger que possible (ne pas d\'epasser si possible 1Mo).
+
+	% %% EXEMPLE DE FIGURE %%
+	% \begin{figure}[ht]
+	% 	\centering
+	% 	\includegraphics[width=.4\textwidth]{ABCDEF-fig1}
+	% 	\caption{\label{fig:fig1} Mettre ici une l\'egende.}
+	% \end{figure}
+
+	%% SECTION 1 %%
+	\section{De la modélisation à la visualisation avec Jupyter/IPython}
+
+	Bla bla.
+
+	%% SECTION 2 %%
+	\section{Titre de la deuxi\`eme section}
+
+	Bla bla.
+
+	%% SECTION 3 %%
+	\section{Python performant avec Cython et Pythran}
+
+	Bla bla.
+
+	%% SECTION CONCLUSION %%
+	\section*{Apprentissage statistique avec scikit-learn}
+
+	Bla bla.
+}
+
+
+%% REMPLIR ICI LES REF BIBLIOGRAPHIQUES DE LA DESCRIPTION DETAILLEE (METTRE EN COMMENTAIRE (\%) SI NON UTILISE)
+% \BiblioDescription{
+% 	\BiblioItem{ref1}{Auteur}{Titre du livre}{Editeur, ville, ann\'ee}
+% 	\BiblioItem{ref2}{Auteur}{Titre de l'article}{Titre de la revue, volume et fascicule, ann\'ee, pages}
+% 	\BiblioItem{ref3}{Auteur}{Titre de l'article}{Titre de la revue, volume et fascicule, ann\'ee, pages}
+% 	\BiblioItem{ref4}{Auteur}{Titre de l'article}{Titre de la revue, volume et fascicule, ann\'ee, pages}
+% }
+
+%% NE RIEN CHANGER EN DESSOUS
+\MSFooter{}

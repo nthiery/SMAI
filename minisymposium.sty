@@ -1,0 +1,171 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%               PRIERE DE NE RIEN MODIFIER DANS CE FICHIER 				
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Package pour les mini-symposium SMAI (par Gabriel Peyré <gabriel.peyre@ceremade.dauphine.fr> ) 
+
+\usepackage[francais]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{latexsym}
+\usepackage{bbm}              % fontes doubles (pour les ensembles, par ex.)
+\usepackage{graphicx}         % pour d'eventuelles figures 
+\usepackage{epsfig}
+\usepackage{amsmath}          % AMSTEX
+\usepackage{amsfonts}
+\usepackage{url}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% format du papier
+
+% pas d'indentation des paragraphes
+\parindent=0cm
+
+\usepackage{vmargin}
+\setpapersize{A4}
+
+
+%% FORMAT SMAI %%
+\setlength{\paperheight}{297mm}\setlength{\paperwidth}{210mm}
+\setlength{\oddsidemargin}{10mm}\setlength{\evensidemargin}{10mm}
+\setlength{\topmargin}{0mm}\setlength{\headheight}{10mm}\setlength{\headsep}{8mm}
+\setlength{\textheight}{240mm}\setlength{\textwidth}{160mm}
+\setlength{\marginparsep}{0mm}\setlength{\marginparwidth}{0mm}
+\setlength{\footskip}{10mm}
+\voffset -13mm\hoffset -10mm
+
+
+\if 0
+% format A4
+\setmarginsrb{20mm}{20mm}{20mm}{20mm}{0mm}{0mm}{0mm}{5mm}
+%1 est la marge gauche
+%2 est la marge en haut
+%3 est la marge droite
+%4 est la marge en bas
+%5 fixe la hauteur de l'entête
+%6 fixe la distance entre l'entête et le texte
+%7 fixe la hauteur du pied de page
+%8 fixe la distance entre le texte et le pied de page
+\fi
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% macros acronyme (a redéfinir dans le fichier)
+\newcommand{\acronyme}{A REMPLIR}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% macros titre
+\newcommand{\titre}[1]{%
+	\begin{center}
+		{\Large{\textbf{\textit{Mini-symposium \acronyme{} }}}} \\\vspace{2mm}
+		{\Large{\textbf{\textit{#1}}}}
+	\end{center}
+%	\vspace{0mm}
+}
+
+\def\auteurenbasdepage#1#2#3{\small{\bf #1}, \small{#2}\\ \small{\tt #3}\\ }
+
+\renewcommand{\refname}{R\'ef\'erences}
+
+% \newcommand{\mytitle}[1]{\noindent\textbf{#1}}
+\newcommand{\mytitle}[1]{\section*{#1}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% macros support ANR, GdR, etc.
+\newcommand{\support}[1]{%
+	\begin{center}
+		{\textit{#1}}
+	\end{center}
+%	\vspace{0mm}
+}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Macro resume
+\newcommand{\Resume}[1]{%
+%	\mytitle{R\'esum\'e} 
+	\renewcommand{\abstractname}{\Large R\'esum\'e}
+	\begin{abstract}
+	#1
+	\end{abstract}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Macro liste organisateurs
+\newcommand{\ListeOrganisateurs}[1]{
+%	\vspace{5mm}
+	\mytitle{Organisateur(s)}
+	\begin{enumerate}
+		#1
+	\end{enumerate}
+}
+%
+\newcommand{\organisateur}[3]{ %
+	\item \textbf{#1 #2}, #3.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Macro liste exposes
+\newcommand{\ListeExposes}[1]{
+\mytitle{Liste des orateurs}
+\begin{enumerate}
+	#1
+\end{enumerate}
+}
+%
+\newcommand{\expose}[4]{ %
+	\item \textbf{#1 #2}, #3\\
+		\textit{Titre :} #4.
+}
+\newcommand{\presentation}[3]{ %
+	\item \textbf{#1 #2}, #3 \\ \textit{Pr\'esentation du mini-symposium.}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Macro description
+\newcommand{\Description}[1]{%
+	#1
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Macro biblio
+\newcommand{\BiblioResume}[1]{
+	\bibliographystyle{plain}
+	\begin{thebibliography}{99}
+		#1
+ 	\end{thebibliography}
+}
+\newcommand{\BiblioDescription}[1]{
+	\bibliographystyle{plain}
+	\begin{thebibliography}{99}
+		#1
+ 	\end{thebibliography}
+}
+%
+\newcommand{\BiblioItem}[4]{ \bibitem{#1} {\sc #2}, {\sl #3}, #4. }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Macro liste adresse bas de page
+\newcommand{\ListeAdresses}[1]{
+	\vfill
+	#1
+	\newpage
+}
+%
+\newcommand{\Adresse}[3]{ %
+	\small{\textbf{#1}}, \small{#2}, \small\url{#3}\\
+}
+
+% \thispagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Macro pour finir la page d'un MS
+\newcommand{\MSFooter}{ % 
+	\newpage
+}
