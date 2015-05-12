@@ -51,7 +51,8 @@
 \ListeExposes{
   \expose{Maximilian}{Albert}{Computational Modelling Group, University of Southampton}{De la modélisation à la visualisation avec Jupyter/IPython}
   \expose{Nicolas M.}{Thiéry}{Laboratoire de Recherche en Informatique, Université Paris Sud}{Algèbre et mathématique discrètes avec Sage}
-  \expose{Loïc}{Gouarin}{Laboratoire de Mathématique d'Orsay, Université Paris Sud}{Python performant avec Cython et Pythran}
+  \expose{Loïc}{Gouarin}{Laboratoire de Mathématique d'Orsay, Université Paris 
+Sud}{Quelques idées d'optimisation d'un code numérique écrit en Python}
   \expose{Fabien}{Pedegrosa}{INRIA Saclay-Île de France}{Apprentissage statistique avec scikit-learn}
 }
 
@@ -116,9 +117,23 @@
 	Bla bla.
 
 	%% SECTION 3 %%
-	\section{Python performant avec Cython et Pythran}
+	\section{Quelques idées d'optimisation d'un code numérique écrit en 
+Python}
 
-	Bla bla.
+	Le langage Python est maintenant largement utilisé au sein de la 
+communauté du calcul numérique en s'appuyant fortement sur le module NumPy qui 
+permet de gérer les tableaux. Bien que ce module soit optimisé pour les 
+opérations élémentaires (addition de deux vecteurs, multiplication de matrices, 
+...), il est souvent nécessaire d'améliorer certaines parties du code avec 
+d'autres outils afin d'obtenir des performances proches d'un langage bas niveau 
+(C ou Fortran). Une large palette est offerte aux développeurs pour optimiser 
+leur code: Cython, Numba, PyPy, Pythran, ... La plupart de ces outils utilise de 
+la compilation "just in time" permettant de générer du code optimisé à 
+l'exécution du programme. Leur syntaxe est très simple et ils peuvent être 
+utilisés sans connaissances particulières. Lors de cette présentation, nous 
+aborderons quelques uns de ces outils ainsi que leurs utilisations sur un cas 
+concret: l'implantation d'une méthode lattice Boltzmann appelée $D_2Q_9$ pour 
+résoudre les équations de Saint Venant.
 
 	%% SECTION CONCLUSION %%
 	\section*{Apprentissage statistique avec scikit-learn}
